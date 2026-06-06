@@ -1,0 +1,100 @@
+{
+  "gameId": "chess",
+  "title": "Chess",
+  "version": "1.0.0",
+  "teachOrder": [
+    "overview",
+    "goal",
+    "board",
+    "setup",
+    "turn-structure",
+    "piece-movement",
+    "capturing",
+    "check",
+    "checkmate",
+    "special-rules",
+    "draws",
+    "basic-principles",
+    "first-turn-summary"
+  ],
+  "nodes": {
+    "overview": {
+      "title": "Overview",
+      "type": "teach",
+      "body": "# Overview\nChess is a two-player strategy game played on an 8×8 board.\n\nEach player controls an army of pieces with different movement rules.\n\nPlayers take turns moving one piece at a time, trying to attack and eventually trap the opponent’s king.",
+      "related": ["goal", "board", "piece-movement"]
+    },
+    "goal": {
+      "title": "Goal of the Game",
+      "type": "teach",
+      "body": "# Goal\nThe goal is to checkmate the opponent’s king.\n\nA king is checkmated when:\n\n- it is under attack\n- and there is no legal move to escape\n\nYou do not win by capturing the king directly.",
+      "related": ["check", "checkmate"]
+    },
+    "board": {
+      "title": "The Board",
+      "type": "teach",
+      "body": "# The Board\nThe chess board has 64 squares arranged in an 8×8 grid.\n\nSquares alternate between light and dark colors.\n\nImportant setup rule:\n\n- the bottom-right square from each player's perspective should be a light square\n\nRows are called **ranks**.\nColumns are called **files**.",
+      "related": ["setup"]
+    },
+    "setup": {
+      "title": "Setup",
+      "type": "teach",
+      "body": "# Setup\nEach player begins with:\n\n- 1 king\n- 1 queen\n- 2 rooks\n- 2 bishops\n- 2 knights\n- 8 pawns\n\nThe second row is filled with pawns.\n\nBack-row order from left to right:\n\nrook, knight, bishop, queen, king, bishop, knight, rook\n\nImportant:\n\n- the queen starts on her own color\n- white moves first",
+      "related": ["board", "piece-movement"]
+    },
+    "turn-structure": {
+      "title": "Turn Structure",
+      "type": "teach",
+      "body": "# Turn Structure\nPlayers alternate turns.\n\nOn your turn:\n\n1. Choose one of your pieces.\n2. Move it according to its movement rules.\n3. Optionally capture an opponent piece.\n\nYou may not make a move that leaves your king in check.",
+      "related": ["piece-movement", "capturing", "check"]
+    },
+    "piece-movement": {
+      "title": "How Pieces Move",
+      "type": "teach",
+      "body": "# How Pieces Move\n## King\nMoves one square in any direction.\n\n## Queen\nMoves any number of squares horizontally, vertically, or diagonally.\n\n## Rook\nMoves any number of squares horizontally or vertically.\n\n## Bishop\nMoves any number of squares diagonally.\n\n## Knight\nMoves in an L-shape:\n\n- two squares in one direction\n- then one square sideways\n\nKnights can jump over pieces.\n\n## Pawn\nUsually moves forward one square.\n\nFrom its starting position, a pawn may move forward two squares.\n\nPawns capture diagonally forward one square.",
+      "related": ["capturing", "special-rules"]
+    },
+    "capturing": {
+      "title": "Capturing Pieces",
+      "type": "teach",
+      "body": "# Capturing Pieces\nA piece captures by moving onto a square occupied by an opponent piece.\n\nThe captured piece is removed from the game.\n\nMost pieces capture using the same movement they normally use.\n\nPawns are special:\n\n- they move forward\n- but capture diagonally",
+      "related": ["piece-movement", "check"]
+    },
+    "check": {
+      "title": "Check",
+      "type": "teach",
+      "body": "# Check\nA king is in **check** if an opponent piece is attacking it.\n\nIf your king is in check, you must respond immediately.\n\nWays to escape check:\n\n- move the king\n- block the attack\n- capture the attacking piece\n\nYou may never ignore check.",
+      "related": ["checkmate", "capturing"]
+    },
+    "checkmate": {
+      "title": "Checkmate",
+      "type": "teach",
+      "body": "# Checkmate\nCheckmate happens when:\n\n- your king is in check\n- and there is no legal way to escape\n\nThe game ends immediately.\n\nThe player delivering checkmate wins.",
+      "related": ["check", "goal"]
+    },
+    "special-rules": {
+      "title": "Special Rules",
+      "type": "teach",
+      "body": "# Special Rules\n## Castling\nCastling is a special move involving the king and a rook.\n\nConditions:\n\n- neither piece has moved before\n- no pieces between them\n- the king is not currently in check\n- the king does not move through check\n\nThe king moves two squares toward the rook, and the rook moves next to the king.\n\n## Promotion\nWhen a pawn reaches the far side of the board, it is promoted.\n\nUsually it becomes a queen.\n\n## En Passant\nA special pawn capture that can happen immediately after a pawn moves two squares forward.",
+      "related": ["piece-movement", "check"]
+    },
+    "draws": {
+      "title": "Draws",
+      "type": "teach",
+      "body": "# Draws\nChess can end in a draw in several ways.\n\nCommon examples:\n\n## Stalemate\nA player has no legal move, but their king is not in check.\n\n## Agreement\nBoth players agree to a draw.\n\n## Insufficient Material\nNeither side has enough pieces to force checkmate.\n\n## Repetition\nThe same position repeats multiple times.\n\n## Fifty-Move Rule\nToo many moves occur without pawn movement or captures.",
+      "related": ["check", "checkmate"]
+    },
+    "basic-principles": {
+      "title": "Basic Principles",
+      "type": "reference",
+      "body": "# Basic Principles\nBeginner strategy ideas:\n\n- Control the center.\n- Develop pieces early.\n- Do not move the same piece repeatedly without reason.\n- Castle to protect your king.\n- Try to keep pieces defended.\n- Think about what your opponent threatens.\n\nChess is often about balancing:\n\n- king safety\n- piece activity\n- material advantage\n- long-term positioning",
+      "related": ["piece-movement", "special-rules"]
+    },
+    "first-turn-summary": {
+      "title": "First Turn Summary",
+      "type": "reference",
+      "body": "# First Turn Summary\nOn your turn:\n\n1. Choose one piece.\n2. Make a legal move.\n3. Capture if possible.\n4. Ensure your king is not left in check.\n\nBeginner reminders:\n\n- Try to develop knights and bishops early.\n- Protect your king.\n- Watch for attacks on undefended pieces.\n- Before every move, ask:\n  - What changed?\n  - What is my opponent threatening?",
+      "related": ["turn-structure", "check", "basic-principles"]
+    }
+  }
+}
