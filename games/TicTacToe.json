@@ -1,0 +1,58 @@
+{
+  "gameId": "tic-tac-toe",
+  "title": "Tic-Tac-Toe",
+  "version": "1.0.0",
+  "teachOrder": [
+    "overview",
+    "goal",
+    "board",
+    "turn-structure",
+    "winning",
+    "draws",
+    "strategy"
+  ],
+  "nodes": {
+    "overview": {
+      "title": "Overview",
+      "type": "teach",
+      "body": "# Overview\nTic-Tac-Toe is a two-player game played on a 3×3 grid.\n\nOne player is **X** and the other is **O**. Players take turns placing their mark in an empty space.",
+      "related": ["goal", "board"]
+    },
+    "goal": {
+      "title": "Goal of the Game",
+      "type": "teach",
+      "body": "# Goal\nWin by placing three of your marks in a row.\n\nA row can be horizontal, vertical, or diagonal.",
+      "related": ["winning"]
+    },
+    "board": {
+      "title": "The Board",
+      "type": "teach",
+      "body": "# The Board\nThe board has 9 spaces arranged in a 3×3 grid.\n\nAt the start of the game, all spaces are empty.",
+      "related": ["turn-structure"]
+    },
+    "turn-structure": {
+      "title": "Taking a Turn",
+      "type": "teach",
+      "body": "# Taking a Turn\nOn your turn:\n\n1. Choose one empty space.\n2. Place your mark there.\n3. Check whether you have won.\n\nThen the other player takes a turn.",
+      "related": ["winning", "draws"]
+    },
+    "winning": {
+      "title": "Winning",
+      "type": "teach",
+      "body": "# Winning\nYou win immediately if you create a line of three of your marks.\n\nWinning lines can be:\n\n- three across\n- three down\n- three diagonally",
+      "related": ["goal", "turn-structure", "draws"]
+    },
+    "draws": {
+      "title": "Draws",
+      "type": "teach",
+      "body": "# Draws\nIf all 9 spaces are filled and neither player has three in a row, the game ends in a draw.",
+      "related": ["winning"]
+    },
+    "strategy": {
+      "title": "Basic Strategy",
+      "type": "reference",
+      "body": "# Basic Strategy\nGood beginner strategy:\n\n- Try to take the center.\n- Block your opponent if they have two in a row.\n- Create threats where you could win next turn.\n- Watch the diagonals.",
+      "related": ["winning", "turn-structure"]
+    }
+  }
+}
