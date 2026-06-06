@@ -1,0 +1,114 @@
+{
+  "gameId": "catan",
+  "title": "Catan",
+  "version": "1.0.0",
+  "teachOrder": [
+    "overview",
+    "goal",
+    "board",
+    "resources",
+    "settlements-and-roads",
+    "setup",
+    "turn-structure",
+    "production",
+    "trading",
+    "building",
+    "development-cards",
+    "robber",
+    "longest-road-largest-army",
+    "ending",
+    "first-turn-summary"
+  ],
+  "nodes": {
+    "overview": {
+      "title": "Overview",
+      "type": "teach",
+      "body": "# Overview\nCatan is a trading and building game.\n\nPlayers collect resources, trade with each other, and build roads, settlements, and cities.\n\nThe game is about expanding to good locations, managing scarce resources, and negotiating with the other players.",
+      "related": ["goal", "resources", "turn-structure"]
+    },
+    "goal": {
+      "title": "Goal of the Game",
+      "type": "teach",
+      "body": "# Goal\nThe goal is to be the first player to reach **10 victory points**.\n\nYou get victory points mainly from:\n\n- settlements\n- cities\n- some development cards\n- Longest Road\n- Largest Army",
+      "related": ["settlements-and-roads", "development-cards", "longest-road-largest-army", "ending"]
+    },
+    "board": {
+      "title": "The Board",
+      "type": "teach",
+      "body": "# The Board\nThe board is made of hexes.\n\nEach land hex produces one type of resource. Most land hexes also have a number token.\n\nWhen that number is rolled, the hex produces resources for players with buildings next to it.\n\nThe desert does not produce resources.",
+      "related": ["resources", "production", "robber"]
+    },
+    "resources": {
+      "title": "Resources",
+      "type": "teach",
+      "body": "# Resources\nThere are five resources:\n\n- **Brick**\n- **Lumber**\n- **Wool**\n- **Grain**\n- **Ore**\n\nYou use resources to build things.\n\nTypical uses:\n\n- Roads need brick and lumber.\n- Settlements need brick, lumber, wool, and grain.\n- Cities need grain and ore.\n- Development cards need wool, grain, and ore.",
+      "related": ["building", "trading", "production"]
+    },
+    "settlements-and-roads": {
+      "title": "Settlements, Cities, and Roads",
+      "type": "teach",
+      "body": "# Settlements, Cities, and Roads\nA **settlement** is built on an intersection between hexes.\n\nA settlement is worth **1 victory point** and produces **1 resource** when an adjacent hex produces.\n\nA **city** upgrades one of your settlements. It is worth **2 victory points** and produces **2 resources** from adjacent hexes.\n\nA **road** is built along an edge between hexes. Roads let you expand to new building spots.",
+      "related": ["building", "production", "goal"]
+    },
+    "setup": {
+      "title": "Setup",
+      "type": "teach",
+      "body": "# Setup\nEach player begins with:\n\n- 2 settlements\n- 2 roads\n- some starting resources from their second settlement\n\nWhen placing starting settlements, look for:\n\n- good numbers\n- useful resource variety\n- access to brick and lumber for early roads\n- access to ore and grain for cities and development cards\n- ports, if they support your resource plan\n\nImportant rule: settlements must be at least **two edges apart** from any other settlement or city.",
+      "related": ["settlements-and-roads", "resources", "production"]
+    },
+    "turn-structure": {
+      "title": "Turn Structure",
+      "type": "teach",
+      "body": "# Turn Structure\nOn your turn:\n\n1. Roll the dice.\n2. Everyone collects production from the rolled number.\n3. You may trade.\n4. You may build.\n5. You may play up to one development card, if allowed.\n\nTrading and building can usually be done in any order after production.",
+      "related": ["production", "trading", "building", "development-cards"]
+    },
+    "production": {
+      "title": "Production",
+      "type": "teach",
+      "body": "# Production\nRoll two dice.\n\nEach hex with the rolled number produces resources.\n\nIf you have a settlement next to that hex, take **1 matching resource**.\n\nIf you have a city next to that hex, take **2 matching resources**.\n\nAll players collect at the same time, not only the active player.\n\nIf a 7 is rolled, no hex produces.",
+      "related": ["board", "resources", "robber"]
+    },
+    "trading": {
+      "title": "Trading",
+      "type": "teach",
+      "body": "# Trading\nAfter rolling, the active player may trade.\n\nThere are two main kinds of trade:\n\n## Player trading\nThe active player may trade resources with other players. Other players may only trade with the active player.\n\n## Bank and port trading\nYou may trade with the bank at a fixed rate.\n\nPorts can give better trade rates if you have a settlement or city on that port.\n\nTrading is often the heart of the game. You usually cannot build everything alone.",
+      "related": ["resources", "building"]
+    },
+    "building": {
+      "title": "Building",
+      "type": "teach",
+      "body": "# Building\nYou spend resources to build.\n\nCommon builds:\n\n- **Road**: helps you expand.\n- **Settlement**: gives a new point and new production.\n- **City**: improves a settlement and doubles production.\n- **Development card**: gives a hidden card with a useful effect.\n\nA new settlement must connect to your road network and must obey the distance rule: no adjacent settlement or city.",
+      "related": ["resources", "settlements-and-roads", "development-cards"]
+    },
+    "development-cards": {
+      "title": "Development Cards",
+      "type": "teach",
+      "body": "# Development Cards\nDevelopment cards are bought with resources and kept hidden.\n\nThey may give:\n\n- knights\n- progress effects\n- hidden victory points\n\nUsually, you cannot play a development card on the same turn you bought it.\n\nYou may play at most one development card on your turn.\n\nVictory point cards are different: they stay hidden until you reveal them to win.",
+      "related": ["robber", "longest-road-largest-army", "goal"]
+    },
+    "robber": {
+      "title": "The Robber",
+      "type": "teach",
+      "body": "# The Robber\nThe robber matters when a **7** is rolled or when a knight is played.\n\nWhen a 7 is rolled:\n\n1. Players with too many resource cards must discard half.\n2. The active player moves the robber to a hex.\n3. That player steals one random resource from a player with a settlement or city next to that hex.\n\nA hex with the robber does not produce resources.",
+      "related": ["production", "development-cards"]
+    },
+    "longest-road-largest-army": {
+      "title": "Longest Road and Largest Army",
+      "type": "teach",
+      "body": "# Longest Road and Largest Army\nThere are two special awards worth **2 victory points** each.\n\n## Longest Road\nAwarded to the player with the longest continuous road, once it is long enough.\n\nIt can be taken away if another player builds a longer road.\n\n## Largest Army\nAwarded to the player who has played the most knights, once enough knights have been played.\n\nIt can also be taken away if another player plays more knights.",
+      "related": ["goal", "building", "development-cards"]
+    },
+    "ending": {
+      "title": "Game End",
+      "type": "teach",
+      "body": "# Game End\nThe game ends when a player reaches **10 victory points** on their own turn.\n\nRemember that some victory points may be hidden in development cards.\n\nA player may reveal hidden victory point cards when they have enough points to win.",
+      "related": ["goal", "development-cards", "longest-road-largest-army"]
+    },
+    "first-turn-summary": {
+      "title": "First Turn Summary",
+      "type": "reference",
+      "body": "# First Turn Summary\nOn your turn, remember:\n\n1. Roll the dice.\n2. Everyone collects resources from the rolled number.\n3. If you rolled 7, resolve the robber instead.\n4. Trade if you want.\n5. Build if you can.\n6. Optionally play one development card, if allowed.\n\nBeginner advice:\n\n- Try to get more settlements early.\n- Trade actively.\n- Watch who is close to 10 points.\n- Do not ignore ore and grain; cities are powerful.",
+      "related": ["turn-structure", "production", "trading", "building"]
+    }
+  }
+}
